@@ -1,0 +1,29 @@
+#Application Config
+application:
+  listino: 1
+
+
+management:
+  info:
+    env:
+      enabled: true
+    git:
+    enabled: true
+    mode: full
+  endpoint:
+    healt:
+      show-details: WHEN_AUTHORIZED
+  endpoints:
+    web:
+      exposure:
+        incluede: healt, info, metrics
+
+info:
+  assistenza:
+    nome: Antonio Carnevale
+    mail: antonio.carnevale@cap4lab.com
+    telefono: 334-12345678
+    orario: 9-20
+  nome:
+    nome-app: PriceArt Web Service - Autenticazione JWT
+  profilo: GitHub
