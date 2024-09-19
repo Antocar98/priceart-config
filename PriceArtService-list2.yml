@@ -1,22 +1,21 @@
-#Application Config
+# Application Config
 application:
   listino: 2
-
 
 management:
   info:
     env:
       enabled: true
     git:
-    enabled: true
-    mode: full
+      enabled: true
+      mode: full
   endpoint:
-    healt:
+    health:
       show-details: WHEN_AUTHORIZED
   endpoints:
     web:
       exposure:
-        incluede: healt, info, metrics
+        include: health, info, metrics, refresh
 
 info:
   assistenza:
